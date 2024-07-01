@@ -57,4 +57,4 @@ select * from personagens where personagens.ataque > 2000;
 select * from personagens where personagens.defesa between 1000 and 2000;
 select * from personagens where personagens.nome LIKE "%C%";
 select * from personagens inner join classes where personagens.id_classe = classes.id;
-select * from personagens inner join classes where personagens.id_classe = classes.id and classes.classe = 'Bardo';
+select * from personagens inner join classes on personagens.id_classe = classes.id and classes.classe = 'Bardo';

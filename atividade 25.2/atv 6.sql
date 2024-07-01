@@ -39,5 +39,5 @@ select * from cursos where cursos.valor > 500;
 select * from cursos where cursos.valor between 600 and 1000;
 select * from cursos where nome like "%J%";
 select * from cursos inner join categorias where cursos.id_categoria = categorias.id;
-select * from cursos inner join categorias where cursos.id_categoria = categorias.id and categorias.nome = "Programação";
+select * from cursos inner join categorias on cursos.id_categoria = categorias.id and categorias.nome = "Programação";
 

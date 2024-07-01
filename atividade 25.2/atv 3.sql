@@ -39,4 +39,4 @@ select * from produtos where produtos.preco > 50;
 select * from produtos where produtos.preco between 5 and 60;
 select * from produtos where nome like "%C%";
 select * from produtos inner join categorias where produtos.id_categoria = categorias.id;
-select * from produtos inner join categorias where produtos.id_categoria = categorias.id and categorias.nome = "cosmeticos";
+select * from produtos inner join categorias on produtos.id_categoria = categorias.id and categorias.nome = "cosmeticos";
